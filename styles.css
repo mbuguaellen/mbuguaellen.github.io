@@ -1,0 +1,80 @@
+
+
+
+body {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url(/home/wanjiru/Downloads/project/pic4.jpg);
+    
+}
+
+h1 {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 20px;
+    margin: 0.2em;
+    color: peru;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    text-decoration-color: blue;
+    font-family: Monoton;
+    color:#F0161B;
+
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+    font-family: Monoton;
+    
+    
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+
+}
+
+tr {
+    height: 7px;
+}
+
+td {
+    width: 7px;
+
+}
+
+form{
+color: peru;
+
+
+}
+input[type=number] {
+    width: 4em;
+    height:2em;
+    border-radius: 5px;
+    outline:none;
+    border: 2px solid #dadada;
+    margin-left:5px;
+    margin-right:5px;
+}
+input[type=submit] {
+    width: 4em;
+    height: 2em;
+    border-radius:5px;
+    background-color: blue;
+    margin: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    outline:none;
+    margin-left:5px;
+}
