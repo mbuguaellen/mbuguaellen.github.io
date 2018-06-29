@@ -5,7 +5,7 @@
 
 Udacity - Front-End Web Developer Nanodegree project
 
-#####  Live view **click** [here](http://mbuguaellen.github.io/)
+#####  Live view **click** [here](http://mbuguaellen.github.io)
 
 ## Art Preview
 
