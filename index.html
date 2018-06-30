@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-    <title>Pixel Art Maker!</title>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Maker</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1><span style="color: #4a90e2">M</span><span style="color: #93e28e">i</span><span style="color: #e270cf">ss</span><span style="color: #e270cf">y</span>
-    <span style="color: #e2d45e">:</span> <span style="color: #5be2cc">P</span><span style="color: #ac84e2">i</span>
-    <span style="color: #e233a3">x</span><span style="color: #2ae2dc">e</span><span style="color: #e25258">l</span>
-    <span style="color: #6ae297">A</span><span style="color: #e2d595">r</span><span style="color: #7ee27d">t</span>
-    <span style="color: #bf92e2">M</span><span style="color: #3cbfe2">a</span><span style="color: #e24f5a">k</span>
-    <span style="color: #dde29d">e</span><span style="color: #8fe278">r</span></h1>
 
+    <header>
+        <h1>missy Pixel Art Maker</h1>
+    </header>
 
-    <h2><span style="color: #794ACF">C</span><span style="color: #794ACF">h</span><span style="color: #794ACF">o</span> 
-    	<span style="color: #794ACF">o</span></span><span style="color: #794ACF">s</span>
-    	<span style="color: #794ACF">e</span></h2>
+    <main>
+
+        <article>
+
+            <header>
+
+                <h2>Choose grid size</h2>
+
+                <form id="sizePicker">
+                    <label for="input_height">Grid height:</label>
+                    <input type="number" id="input_height" name="height" min="1" max="100" value="1">
+                    <label for="input_width">Grid width:</label>
+                    <input type="number" id="input_width" name="width" min="1" max="100" value="1">
+                    <input type="submit" value="Create">
+                </form>
+
+                <div class="color">
+                    <h2>Pick a color</h2>
+                    <button id="color_saver" class="active">Save color</button>
+                    <input type="color" id="colorPicker" value="#ff1515">
+    
+                </div>
+
+                <h2>Design canvas</h2>
+                <button id="undo_button">Undo</button>
+                <img id="eraser" src="img/eraser.png" alt="Eraser icon">
+                <img id="brush" src="img/paint-brush.png" alt="Paint brush icon">
+
+            </header>
+
+            <table id="pixel_canvas"></table>
+
+            <div id="control"></div>
+
+            <div id="canvasDiv"></div>
+
+        </article>
+
+    </main>
 
     
 
-    <form id="sizePicker">
-        Grid Height:
-
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
-
-        Grid Width:
-        <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <button class="btn btn-primary" type="submit" style="color:black">Submit</button>
-    </form>
-
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
-
-    <h2>Design Canvas</h2>
-    <table id="pixelCanvas"></table>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="designs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js_library/jquery-3.2.1.min.js"><\/script>')</script>
+    
+    <script src="js/designs.js"></script>
 </body>
 </html>
+
