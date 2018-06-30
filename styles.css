@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     color: green;
     background-repeat: no-repeat;
-    background-image: url(/home/wanjiru/Downloads/project/pic4.jpg);
+    background-image: url(pic4.jpg);
     text-align: center;
 }
 
