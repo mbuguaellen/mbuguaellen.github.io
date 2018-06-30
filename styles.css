@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: green;
+    background-repeat: no-repeat;
+    background-image: url(/home/wanjiru/Downloads/project/pic4.jpg);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    color: green;
+}
+
+input[type=number] {
+    width: 2.5rem;
+    border: 1px dashed blue;
+    background-color: transparent;
+    color: #0000;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+input[type=submit], .active, a {
+    border: 1px solid green;
+    border-radius: 6px;
+    background-color: green;
+    color: #f8f8ff;
+    letter-spacing: 2px;
+    padding: 4px;
+    transition: all .1s ease-in-out;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input[type=submit]:hover, .active:hover, a:hover {
+    cursor: pointer;
+    background-color: #ff3737;
+    border-color: #ff3737;
+}
+
+input[type=color] {
+    background-color: #24142d;
+    border: 1px dashed blue;
+    padding: 4px;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 20px 0 20px;
+}
+
+input[type=color]:hover {
+    cursor: pointer;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    padding: 4px;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#undo_button {
+    margin-bottom: 10px;
+}
+
+#eraser {
+    margin: 0 10px;
+}
+
+#eraser:hover, #brush:hover {
+    cursor: pointer;
+}
+
+#pixel_canvas {
+    border: none;
+    margin: 0 auto;
+    border-spacing: 0;
+    padding: 15px;
+}
+
+td {
+    background-color: white;
+    border: 1px solid black;
+    width: 6px;
+    height: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    td {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+#saveButton {
+    margin-top: 10px;
+}
+
+
+
+
+#canvasDiv {
+    margin: 10px;
+}
