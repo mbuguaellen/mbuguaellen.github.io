@@ -12,4 +12,3 @@ Use the canvas to create mind blowing art.Let your imagination run wild.
 
 ![Preview Work](africa.png)
 
-![Preview Work](africa2.png)
